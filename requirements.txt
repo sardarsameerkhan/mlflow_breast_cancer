@@ -1,0 +1,5 @@
+mlflow
+scikit-learn
+joblib
+pytest
+huggingface_hub
