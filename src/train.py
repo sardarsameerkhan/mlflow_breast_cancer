@@ -23,14 +23,20 @@ def upload_model_to_huggingface(model_path: Path) -> str | None:
     if not hf_token or not hf_repo_id:
         return None
 
-    api = HfApi(token=hf_token)
-    api.create_repo(repo_id=hf_repo_id, repo_type="model", exist_ok=True)
-    api.upload_file(
-        path_or_fileobj=str(model_path),
-        path_in_repo=model_path.name,
-        repo_id=hf_repo_id,
-        repo_type="model",
-    )
+    try:
+        api = HfApi(token=hf_token)
+        api.create_repo(repo_id=hf_repo_id, repo_type="model", exist_ok=True)
+        api.upload_file(
+            path_or_fileobj=str(model_path),
+            path_in_repo=model_path.name,
+            repo_id=hf_repo_id,
+            repo_type="model",
+        )
+    except Exception as exc:
+        # Deployment should be best-effort in CI; training artifacts are still produced locally.
+        print(f"Hugging Face upload skipped: {exc}")
+        return None
+
     return f"https://huggingface.co/{hf_repo_id}"
 
 
