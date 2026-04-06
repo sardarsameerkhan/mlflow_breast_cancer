@@ -1,0 +1,56 @@
+{
+  "tracking_uri": "file:./mlruns",
+  "experiment_name": "Breast_Cancer_Retraining",
+  "experiment_id": "961145358725405337",
+  "decision_runs_exported": 4,
+  "decision_runs": [
+    {
+      "run_id": "8cb82286fa4444c08d7dfffa1501ef1f",
+      "run_name": "retraining_decision",
+      "trigger_type": "performance-check",
+      "promoted": "false",
+      "candidate_model": "Logistic_Regression_v1",
+      "previous_model": "Logistic_Regression_v1",
+      "new_accuracy": 0.9824561403508771,
+      "previous_accuracy": 0.9825,
+      "accuracy_improvement": -4.385964912290152e-05,
+      "start_time": "2026-04-06 12:29:11.738000+00:00"
+    },
+    {
+      "run_id": "08afeb9a5452475daef86946715755df",
+      "run_name": "retraining_decision",
+      "trigger_type": "schedule",
+      "promoted": "false",
+      "candidate_model": "Logistic_Regression_v1",
+      "previous_model": "Logistic_Regression_v1",
+      "new_accuracy": 0.9824561403508771,
+      "previous_accuracy": 0.9825,
+      "accuracy_improvement": -4.385964912290152e-05,
+      "start_time": "2026-04-06 12:28:49.462000+00:00"
+    },
+    {
+      "run_id": "dced36d483034767ac692301681a0cf4",
+      "run_name": "retraining_decision",
+      "trigger_type": "schedule",
+      "promoted": "false",
+      "candidate_model": "Logistic_Regression_v1",
+      "previous_model": "Logistic_Regression_v1",
+      "new_accuracy": 0.9824561403508771,
+      "previous_accuracy": 0.9825,
+      "accuracy_improvement": -4.385964912290152e-05,
+      "start_time": "2026-04-06 12:28:26.891000+00:00"
+    },
+    {
+      "run_id": "207fe3ca3ad3492a89c853e1e4d5405b",
+      "run_name": "retraining_decision",
+      "trigger_type": "manual",
+      "promoted": "false",
+      "candidate_model": "Logistic_Regression_v1",
+      "previous_model": "Logistic_Regression_v1",
+      "new_accuracy": 0.9824561403508771,
+      "previous_accuracy": 0.9825,
+      "accuracy_improvement": -4.385964912290152e-05,
+      "start_time": "2026-04-06 12:20:01.328000+00:00"
+    }
+  ]
+}

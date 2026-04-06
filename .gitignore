@@ -4,6 +4,7 @@ __pycache__/
 .idea/
 .vscode/
 mlflow.db
+mlruns/
 mlartifacts/
 models/*.joblib
 models/*.json
