@@ -1,0 +1,10 @@
+artifact_location: file:D:/mlflow_breast_cancer/mlruns/0/models/m-22c8ec8174914e5abb8373eeb17c16b1/artifacts
+creation_timestamp: 1775472553895
+experiment_id: '0'
+last_updated_timestamp: 1775472559503
+model_id: m-22c8ec8174914e5abb8373eeb17c16b1
+model_type: null
+name: my_model
+source_run_id: 7a6c1fb1ca624fabbdd5d1845c745ef3
+status: 2
+status_message: null

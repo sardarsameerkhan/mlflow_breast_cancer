@@ -1,5 +1,5 @@
 mlflow
 scikit-learn
-joblib
+pandas
 pytest
 huggingface_hub

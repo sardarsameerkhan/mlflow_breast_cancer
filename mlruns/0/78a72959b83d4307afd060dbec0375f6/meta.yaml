@@ -1,0 +1,14 @@
+artifact_uri: file:D:/mlflow_breast_cancer/mlruns/0/78a72959b83d4307afd060dbec0375f6/artifacts
+end_time: 1775472552815
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 78a72959b83d4307afd060dbec0375f6
+run_name: Logistic_Regression_v1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775472546764
+status: 3
+tags: []
+user_id: Sardar Sameer

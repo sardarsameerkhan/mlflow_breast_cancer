@@ -1,0 +1,14 @@
+artifact_uri: file:D:/mlflow_breast_cancer/mlruns/0/7a6c1fb1ca624fabbdd5d1845c745ef3/artifacts
+end_time: 1775472559518
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7a6c1fb1ca624fabbdd5d1845c745ef3
+run_name: Random_Forest_v2_Tuned
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775472552839
+status: 3
+tags: []
+user_id: Sardar Sameer
