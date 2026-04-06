@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import json
 import os
+import pickle
 from pathlib import Path
 
-import joblib
 from huggingface_hub import HfApi
 
 from pipeline import MODELS_DIR, register_best_model, run_training_pipeline
@@ -39,7 +39,8 @@ def main() -> None:
 
     MODELS_DIR.mkdir(parents=True, exist_ok=True)
     best_model_path = MODELS_DIR / "best_model.joblib"
-    joblib.dump(best_result.model, best_model_path)
+    with best_model_path.open("wb") as model_file:
+        pickle.dump(best_result.model, model_file)
 
     model_version = register_best_model(best_result)
     summary = {
